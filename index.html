@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dwiss Train Station | Smart Rail Travel</title>
+    <meta
+      name="description"
+      content="Book fast, modern rail travel with Dwiss Train Station. Explore routes, schedules, and premium station services."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="#top" class="brand" aria-label="Dwiss Train Station home">
+          <span class="brand-mark">D</span>
+          <span>Dwiss Train Station</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#routes">Routes</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <a href="#booking" class="nav-cta">Buy Tickets</a>
+      </div>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Welcome, Mr. Daniel</span>
+          <h1>Travel faster across every city.</h1>
+          <p>
+            Dwiss Train Station proudly serves commuters, travelers, and
+            families with dependable rail service, modern station amenities, and
+            seamless ticket booking.
+          </p>
+
+          <div class="cta-row">
+            <a href="#booking" class="btn btn-primary">Book a trip</a>
+            <a href="#schedule" class="btn btn-secondary">View schedule</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Key station metrics">
+            <div class="stat-chip">
+              <strong>240+</strong>
+              <span>Daily departures</span>
+            </div>
+            <div class="stat-chip">
+              <strong>42</strong>
+              <span>Connected cities</span>
+            </div>
+            <div class="stat-chip">
+              <strong>99.2%</strong>
+              <span>On-time service</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel" id="booking">
+          <div class="panel-header">
+            <h2>Plan your route</h2>
+            <span class="live-badge">Live updates</span>
+          </div>
+
+          <form class="booking-form">
+            <div class="field-group">
+              <label class="field-label" for="fromStation">From</label>
+              <select id="fromStation" name="fromStation">
+                <option value="">Select station</option>
+                <option>Central Station</option>
+                <option>Harbor Terminal</option>
+                <option>Northgate</option>
+                <option>City Square</option>
+                <option>West End</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="toStation">To</label>
+              <select id="toStation" name="toStation">
+                <option value="">Select destination</option>
+                <option>Central Station</option>
+                <option>Harbor Terminal</option>
+                <option>Northgate</option>
+                <option>City Square</option>
+                <option>West End</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <div class="field-group">
+                <label class="field-label" for="travelDate">Date</label>
+                <input id="travelDate" type="date" name="travelDate" />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="travelTime">Time</label>
+                <input id="travelTime" type="time" name="travelTime" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Search trains</button>
+            <div
+              id="booking-status"
+              class="booking-note"
+              aria-live="polite"
+            ></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="container" id="about">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Why Dwiss</span>
+            <h2>Built for effortless journeys.</h2>
+          </div>
+          <a href="#services" class="link-arrow">More services →</a>
+        </div>
+
+        <div class="stats-grid">
+          <article class="info-card">
+            <div class="icon">🚄</div>
+            <h3>High-speed routes</h3>
+            <p>
+              Fast, efficient service connecting the metro area and regional
+              hubs.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="icon">🧭</div>
+            <h3>Smart navigation</h3>
+            <p>Real-time platform updates and route guidance for every trip.</p>
+          </article>
+
+          <article class="info-card">
+            <div class="icon">🛡️</div>
+            <h3>Safe & secure</h3>
+            <p>
+              Station monitoring, trained staff, and reliable service every day.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="icon">💳</div>
+            <h3>Easy booking</h3>
+            <p>
+              Book online or at the station in minutes with flexible payment
+              options.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" id="routes">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Popular routes</span>
+            <h2>Choose your next destination.</h2>
+          </div>
+          <a href="#booking" class="link-arrow">Book now →</a>
+        </div>
+
+        <div class="route-grid">
+          <article class="route-card">
+            <div class="route-top">
+              <span class="route-name">Express</span>
+              <span class="route-time">1h 20m</span>
+            </div>
+            <h3>City Loop</h3>
+            <div class="route-meta">
+              <span>From Central</span>
+              <span>105 km</span>
+            </div>
+            <ul>
+              <li>Fastest weekday departures</li>
+              <li>Business lounge access</li>
+              <li>24/7 customer assistance</li>
+            </ul>
+            <a href="#booking" class="btn btn-secondary">Reserve seat</a>
+          </article>
+
+          <article class="route-card">
+            <div class="route-top">
+              <span class="route-name">Regional</span>
+              <span class="route-time">2h 15m</span>
+            </div>
+            <h3>Harbor Line</h3>
+            <div class="route-meta">
+              <span>From Northgate</span>
+              <span>178 km</span>
+            </div>
+            <ul>
+              <li>Scenic coastline tracks</li>
+              <li>Family-friendly coaches</li>
+              <li>Wifi included</li>
+            </ul>
+            <a href="#booking" class="btn btn-secondary">Reserve seat</a>
+          </article>
+
+          <article class="route-card">
+            <div class="route-top">
+              <span class="route-name">Night</span>
+              <span class="route-time">3h 05m</span>
+            </div>
+            <h3>Hill Express</h3>
+            <div class="route-meta">
+              <span>From West End</span>
+              <span>224 km</span>
+            </div>
+            <ul>
+              <li>Night comfort seating</li>
+              <li>Quiet cabin options</li>
+              <li>Late arrival transfer</li>
+            </ul>
+            <a href="#booking" class="btn btn-secondary">Reserve seat</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="container schedule-section" id="schedule">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Today’s schedule</span>
+            <h2>Departures from Central Station</h2>
+          </div>
+          <span id="today-date" class="link-arrow">Loading...</span>
+        </div>
+
+        <div class="schedule-wrap">
+          <div class="timeline" aria-label="Train schedule timeline">
+            <div class="schedule-entry">
+              <div class="time-block">07:40</div>
+              <div class="train-info">
+                <strong>Metro Express 26</strong>
+                <span>Central → Harbor Terminal</span>
+              </div>
+              <span class="status-pill on-time">On time</span>
+            </div>
+
+            <div class="schedule-entry">
+              <div class="time-block">09:15</div>
+              <div class="train-info">
+                <strong>Coastal Runner 11</strong>
+                <span>Central → Northgate</span>
+              </div>
+              <span class="status-pill on-time">On time</span>
+            </div>
+
+            <div class="schedule-entry">
+              <div class="time-block">11:30</div>
+              <div class="train-info">
+                <strong>City Commuter 41</strong>
+                <span>Central → City Square</span>
+              </div>
+              <span class="status-pill limited">Limited</span>
+            </div>
+
+            <div class="schedule-entry">
+              <div class="time-block">14:05</div>
+              <div class="train-info">
+                <strong>Hill Express 9</strong>
+                <span>Central → West End</span>
+              </div>
+              <span class="status-pill on-time">On time</span>
+            </div>
+          </div>
+
+          <aside class="side-panel" aria-label="Station benefits">
+            <h3>Station services</h3>
+            <p>
+              Enjoy seamless comfort, digital updates, and convenient access
+              before every departure.
+            </p>
+
+            <div class="feature-list">
+              <div class="feature-row">
+                <div class="feature-icon">📍</div>
+                <div>
+                  <strong>Platform alerts</strong>
+                  <span>Live real-time departure updates.</span>
+                </div>
+              </div>
+
+              <div class="feature-row">
+                <div class="feature-icon">☕</div>
+                <div>
+                  <strong>On-site café</strong>
+                  <span>Fresh coffee, snacks, and quick bites.</span>
+                </div>
+              </div>
+
+              <div class="feature-row">
+                <div class="feature-icon">🧳</div>
+                <div>
+                  <strong>Luggage support</strong>
+                  <span>Secure storage and porter assistance.</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="container services" id="services">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Amenities</span>
+            <h2>Everything you need on the move.</h2>
+          </div>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon">📶</div>
+            <h3>Free Wi-Fi</h3>
+            <p>
+              Stay connected throughout your journey with reliable onboard
+              connectivity.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🧼</div>
+            <h3>Clean cabins</h3>
+            <p>
+              Fresh, comfortable environments maintained with daily care and
+              standards.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🎧</div>
+            <h3>Entertainment</h3>
+            <p>
+              Enjoy curated audio and digital content on select premium routes.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🛂</div>
+            <h3>Travel support</h3>
+            <p>
+              Friendly assistance for boarding, ticketing, and special
+              accommodation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="promo-banner">
+          <div>
+            <h3>Ready for your next trip?</h3>
+            <p>
+              Book a premium rail experience with flexible departures and smart
+              pricing.
+            </p>
+          </div>
+          <a href="#booking" class="btn btn-primary">Reserve today</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div>© 2026 Dwiss Train Station</div>
+        <div class="footer-links">
+          <a href="#routes">Routes</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#services">Services</a>
+          <a href="#top">Back to top</a>
+        </div>
+        <div id="current-time">--:--</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
