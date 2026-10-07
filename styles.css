@@ -74,15 +74,38 @@ img {
 }
 
 .brand-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--teal-400), var(--gold-400));
-  color: var(--navy-900);
-  font-size: 1.35rem;
-  box-shadow: var(--shadow);
+  background: linear-gradient(135deg, #0d9d8d 0%, #f9c74f 100%);
+  box-shadow: 0 16px 28px rgba(249, 199, 79, 0.18);
+  padding: 8px;
+}
+
+.brand-mark svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-text strong {
+  font-size: 0.98rem;
+  letter-spacing: 0.08em;
+}
+
+.brand-text small {
+  font-size: 0.58rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.15em;
+  margin-top: 4px;
 }
 
 .nav-links {
@@ -222,6 +245,43 @@ img {
   border-radius: 28px;
   padding: 24px;
   box-shadow: var(--shadow);
+}
+
+.crypto-payments {
+  display: grid;
+  gap: 8px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(111, 228, 217, 0.08);
+  border: 1px solid rgba(111, 228, 217, 0.2);
+}
+
+.crypto-payments > span {
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--teal-400);
+  font-weight: 700;
+}
+
+.crypto-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.crypto-row span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  padding: 6px 10px;
+  font-size: 0.76rem;
+  font-weight: 700;
 }
 
 .panel-header {
@@ -592,6 +652,80 @@ img {
   margin-top: 90px;
 }
 
+.ceo-section {
+  margin-top: 90px;
+}
+
+.ceo-card {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 28px;
+  background: #fff;
+  border: 1px solid rgba(17, 52, 77, 0.06);
+  border-radius: 28px;
+  padding: 22px;
+  box-shadow: 0 20px 30px rgba(9, 35, 49, 0.06);
+  align-items: center;
+}
+
+.ceo-image-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 45, 65, 0.1),
+    rgba(111, 228, 217, 0.15)
+  );
+}
+
+.ceo-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ceo-copy {
+  display: grid;
+  gap: 12px;
+}
+
+.ceo-badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(62, 199, 193, 0.12);
+  color: #0d5a63;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.ceo-copy h3 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  color: var(--navy-900);
+  letter-spacing: -0.05em;
+}
+
+.ceo-copy p {
+  margin: 0;
+  line-height: 1.7;
+  color: #49677a;
+  max-width: 620px;
+}
+
+.signature {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #0e4c60;
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -688,11 +822,13 @@ img {
   .schedule-wrap,
   .route-grid,
   .stats-grid,
-  .service-grid {
+  .service-grid,
+  .ceo-card {
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-inner {
+  .hero-inner,
+  .ceo-card {
     grid-template-columns: 1fr;
   }
 

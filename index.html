@@ -20,8 +20,36 @@
     <header class="site-header">
       <div class="container navbar">
         <a href="#top" class="brand" aria-label="Dwiss Train Station home">
-          <span class="brand-mark">D</span>
-          <span>Dwiss Train Station</span>
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" role="img" aria-label="Dwiss logo">
+              <circle cx="50" cy="50" r="46" fill="rgba(255,255,255,0.1)" />
+              <path
+                d="M24 60V40c0-7 5-12 12-12h28c7 0 12 5 12 12v20"
+                fill="none"
+                stroke="#f5f3eb"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+              <path
+                d="M36 42h28"
+                stroke="#f9c74f"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+              <path
+                d="M30 60h40"
+                stroke="#6fe4d9"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+              <circle cx="34" cy="72" r="6" fill="#f9c74f" />
+              <circle cx="66" cy="72" r="6" fill="#6fe4d9" />
+            </svg>
+          </span>
+          <span class="brand-text">
+            <strong>Dwiss</strong>
+            <small>Train Station</small>
+          </span>
         </a>
 
         <nav class="nav-links" aria-label="Main navigation">
@@ -39,11 +67,11 @@
       <div class="container hero-inner">
         <div class="hero-copy">
           <span class="eyebrow">Welcome, Mr. Daniel</span>
-          <h1>Travel faster across every city.</h1>
+          <h1>Ride Nigeria with speed and comfort.</h1>
           <p>
-            Dwiss Train Station proudly serves commuters, travelers, and
-            families with dependable rail service, modern station amenities, and
-            seamless ticket booking.
+            Dwiss Train Station delivers reliable rail connections across
+            Nigeria, combining modern comfort, digital booking, and secure
+            payment options for every trip.
           </p>
 
           <div class="cta-row">
@@ -78,11 +106,14 @@
               <label class="field-label" for="fromStation">From</label>
               <select id="fromStation" name="fromStation">
                 <option value="">Select station</option>
-                <option>Central Station</option>
-                <option>Harbor Terminal</option>
-                <option>Northgate</option>
-                <option>City Square</option>
-                <option>West End</option>
+                <option>Lagos Terminus</option>
+                <option>Abuja Central</option>
+                <option>Kaduna Junction</option>
+                <option>Ibadan Station</option>
+                <option>Port Harcourt</option>
+                <option>Kano Station</option>
+                <option>Enugu Terminus</option>
+                <option>Jos Central</option>
               </select>
             </div>
 
@@ -90,11 +121,14 @@
               <label class="field-label" for="toStation">To</label>
               <select id="toStation" name="toStation">
                 <option value="">Select destination</option>
-                <option>Central Station</option>
-                <option>Harbor Terminal</option>
-                <option>Northgate</option>
-                <option>City Square</option>
-                <option>West End</option>
+                <option>Lagos Terminus</option>
+                <option>Abuja Central</option>
+                <option>Kaduna Junction</option>
+                <option>Ibadan Station</option>
+                <option>Port Harcourt</option>
+                <option>Kano Station</option>
+                <option>Enugu Terminus</option>
+                <option>Jos Central</option>
               </select>
             </div>
 
@@ -111,6 +145,15 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Search trains</button>
+            <div class="crypto-payments" aria-label="Accepted crypto payments">
+              <span>Crypto accepted</span>
+              <div class="crypto-row">
+                <span>BTC</span>
+                <span>ETH</span>
+                <span>USDT</span>
+                <span>SOL</span>
+              </div>
+            </div>
             <div
               id="booking-status"
               class="booking-note"
@@ -179,17 +222,17 @@
           <article class="route-card">
             <div class="route-top">
               <span class="route-name">Express</span>
-              <span class="route-time">1h 20m</span>
+              <span class="route-time">1h 25m</span>
             </div>
-            <h3>City Loop</h3>
+            <h3>Lagos → Abuja</h3>
             <div class="route-meta">
-              <span>From Central</span>
-              <span>105 km</span>
+              <span>From Lagos Terminus</span>
+              <span>770 km</span>
             </div>
             <ul>
-              <li>Fastest weekday departures</li>
-              <li>Business lounge access</li>
-              <li>24/7 customer assistance</li>
+              <li>Fastest daily business route</li>
+              <li>Priority seating available</li>
+              <li>24/7 support at terminals</li>
             </ul>
             <a href="#booking" class="btn btn-secondary">Reserve seat</a>
           </article>
@@ -197,35 +240,35 @@
           <article class="route-card">
             <div class="route-top">
               <span class="route-name">Regional</span>
-              <span class="route-time">2h 15m</span>
+              <span class="route-time">2h 10m</span>
             </div>
-            <h3>Harbor Line</h3>
+            <h3>Kaduna → Kano</h3>
             <div class="route-meta">
-              <span>From Northgate</span>
-              <span>178 km</span>
+              <span>From Kaduna Junction</span>
+              <span>340 km</span>
             </div>
             <ul>
-              <li>Scenic coastline tracks</li>
-              <li>Family-friendly coaches</li>
-              <li>Wifi included</li>
+              <li>Comfortable overnight coaches</li>
+              <li>Secure luggage handling</li>
+              <li>Wi-Fi and snacks onboard</li>
             </ul>
             <a href="#booking" class="btn btn-secondary">Reserve seat</a>
           </article>
 
           <article class="route-card">
             <div class="route-top">
-              <span class="route-name">Night</span>
+              <span class="route-name">Coastal</span>
               <span class="route-time">3h 05m</span>
             </div>
-            <h3>Hill Express</h3>
+            <h3>Port Harcourt → Enugu</h3>
             <div class="route-meta">
-              <span>From West End</span>
-              <span>224 km</span>
+              <span>From Port Harcourt</span>
+              <span>410 km</span>
             </div>
             <ul>
-              <li>Night comfort seating</li>
-              <li>Quiet cabin options</li>
-              <li>Late arrival transfer</li>
+              <li>Business and economy cabins</li>
+              <li>Ideal for intercity travel</li>
+              <li>Reliable local departures</li>
             </ul>
             <a href="#booking" class="btn btn-secondary">Reserve seat</a>
           </article>
@@ -236,7 +279,7 @@
         <div class="section-head">
           <div>
             <span class="kicker">Today’s schedule</span>
-            <h2>Departures from Central Station</h2>
+            <h2>Departures from Lagos Terminus</h2>
           </div>
           <span id="today-date" class="link-arrow">Loading...</span>
         </div>
@@ -246,8 +289,8 @@
             <div class="schedule-entry">
               <div class="time-block">07:40</div>
               <div class="train-info">
-                <strong>Metro Express 26</strong>
-                <span>Central → Harbor Terminal</span>
+                <strong>Dwiss Express 26</strong>
+                <span>Lagos → Abuja</span>
               </div>
               <span class="status-pill on-time">On time</span>
             </div>
@@ -255,8 +298,8 @@
             <div class="schedule-entry">
               <div class="time-block">09:15</div>
               <div class="train-info">
-                <strong>Coastal Runner 11</strong>
-                <span>Central → Northgate</span>
+                <strong>North Star 11</strong>
+                <span>Lagos → Kaduna</span>
               </div>
               <span class="status-pill on-time">On time</span>
             </div>
@@ -264,8 +307,8 @@
             <div class="schedule-entry">
               <div class="time-block">11:30</div>
               <div class="train-info">
-                <strong>City Commuter 41</strong>
-                <span>Central → City Square</span>
+                <strong>Urban Commuter 41</strong>
+                <span>Lagos → Ibadan</span>
               </div>
               <span class="status-pill limited">Limited</span>
             </div>
@@ -273,8 +316,8 @@
             <div class="schedule-entry">
               <div class="time-block">14:05</div>
               <div class="train-info">
-                <strong>Hill Express 9</strong>
-                <span>Central → West End</span>
+                <strong>Delta Breeze 9</strong>
+                <span>Lagos → Port Harcourt</span>
               </div>
               <span class="status-pill on-time">On time</span>
             </div>
@@ -313,6 +356,34 @@
               </div>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section class="container ceo-section">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Leadership</span>
+            <h2>Meet our CEO.</h2>
+          </div>
+        </div>
+
+        <div class="ceo-card">
+          <div class="ceo-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+              alt="Black male executive portrait"
+            />
+          </div>
+          <div class="ceo-copy">
+            <span class="ceo-badge">Chief Executive Officer</span>
+            <h3>Mr. Daniel Amadi</h3>
+            <p>
+              Leading Dwiss Train Station with a vision to transform rail travel
+              in Nigeria through safe service, smarter connections, and
+              unforgettable journeys.
+            </p>
+            <div class="signature">D.A.</div>
+          </div>
         </div>
       </section>
 
@@ -367,8 +438,8 @@
           <div>
             <h3>Ready for your next trip?</h3>
             <p>
-              Book a premium rail experience with flexible departures and smart
-              pricing.
+              Book a premium rail experience with flexible departures, crypto
+              payment support, and smart pricing across Nigeria.
             </p>
           </div>
           <a href="#booking" class="btn btn-primary">Reserve today</a>
